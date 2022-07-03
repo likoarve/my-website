@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Card Pairs</title>
+		<link rel="stylesheet" href="/css/card-pairs.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="/js/card-pairs.js"></script>
+		<link rel="shortcut icon" type="image/ico" href="/img/logo.ico"/>
+	</head>
+	<body>
+		<div class="content-wrap">
+			<div class="board-wrap">
+				<div class="board"></div>
+				<div class="timer">
+					<span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="start-modal" class="start-modal">
+			<div class="start-modal-content">
+			  	<h1>Welcome to Card Pairs</h1>
+				<p>
+					Flip the cards and find all five card pairs.
+				</p>
+				<p>
+					Your goal is to find all matching pairs in as little time as possible. Your timer will start once you flipped
+					your first card.
+				</p>
+				<button id="start-button" onclick="removeModal()">Start Game</button>
+			</div>
+		</div>
+
+		<div id="win-modal" class="win-modal">
+			<div class="win-modal-content">
+				<div class="win-modal-header">
+					<h1>You Won!</h1>
+					<p id="time-taken"></p>
+				</div>
+
+				<p id="high-score"></p>
+				<button id="replay-button" onclick="replay()">Play Again</button>
+			</div>
+		</div>
+
+	</body>
+</html>
