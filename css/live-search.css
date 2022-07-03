@@ -1,0 +1,142 @@
+html {
+    overflow-y: scroll;
+}
+
+html, body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: #DFF6FF;
+}
+
+#main-div {
+    background-color: #FFFFFF;
+    margin: 80px auto 80px auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 16px;
+    padding-bottom: 40px;
+}
+
+#header {
+    padding: 40px;
+    background-color: #06283D;
+    border-radius: 16px 16px 0 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #DFF6FF;
+    font-weight: normal;
+    letter-spacing: 6.5px; 
+    font-size: 36px;  
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+input {
+    color: #DFF6FF;
+    margin-top: 16px;
+    line-height: 1.5;
+    font-size: 15px;
+    width: 75%;
+    height: 40px;
+    position: relative;
+    border: 0px solid #e6e6e6;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.1);
+    padding: 16px 40px 16px 48px;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+
+    background-image: url('../img/search2.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: rgba(223,246,255, 0.5);
+}
+
+input:focus, input:hover {
+    border: 0.4px solid rgba(233,246,255,0.2);
+    outline: none;
+}
+
+#speaker {
+    width: 67%;
+    margin: auto;
+    margin-top: 16px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgb(200,200,200);
+
+    -webkit-animation: animation 0.5s;
+    -moz-animation: animation 0.5s;
+    -o-animation: animation 0.5s;
+    animation: animation 0.5s;
+}
+
+img {
+    float: left;
+    height: 18.75%;
+    width: 18.75%;
+    margin: 3.125% 0 0 3.125%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 3.125% 0 1px 25%;
+    color: #06283D;
+    letter-spacing: 1.6px;
+}
+
+h4, p {
+    font-family: 'Verdana', sans-serif;
+    margin: 0 3.125% 6.25% 25%;
+    line-height: 2;
+    color: rgb(60,60,60);
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+h4 {
+    font-weight: normal;
+    margin: 0 3.125% 1.875% 25%;
+}
+
+@-webkit-keyframes animation {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@-moz-keyframes animation {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@-o-keyframes animation {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes animation {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@media (max-width:960px) { 
+    #main-div {
+        width: 90%; 
+    }
+}
+    
+@media (min-width:960px) {
+    #main-div {
+        width: 945px; 
+    }
+};
